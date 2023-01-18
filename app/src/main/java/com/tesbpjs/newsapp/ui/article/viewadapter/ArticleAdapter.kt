@@ -18,7 +18,7 @@ class ArticleAdapter (private val cellClickListener: ArticleCellClickListener) :
         }
 
         override fun areContentsTheSame(oldItem: Article, newItem: Article): Boolean {
-            return oldItem == newItem
+            return oldItem.equals(newItem)
         }
 
     }

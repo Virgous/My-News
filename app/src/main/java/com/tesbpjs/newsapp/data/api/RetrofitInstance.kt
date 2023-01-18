@@ -10,7 +10,7 @@ object RetrofitInstance {
         val httpClient = OkHttpClient.Builder()
         httpClient.addInterceptor(NewsApiKeyInterceptor())
         Retrofit.Builder()
-            .baseUrl("http://newsapi.org/v2")
+            .baseUrl("https://newsapi.org/v2/")
             .addConverterFactory(MoshiConverterFactory.create())
             .client(httpClient.build())
             .build()
